@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Laundry</title>
+  <link rel="stylesheet" href="css/laundry.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="javascript/price.js"></script> 
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<div class="header">
+  <a href="home.html" class="logo fas"> <img src="images/laun.jpg" class="rounded" alt="Laundry" width=60 height=50> </a>
+  <a href="home.html" style="padding: 15px"><p style="font-size: 25px;">Online Laundry</p></a>
+  <div class="header-right">
+    <a href="home.html" style="text-decoration: none;">Home</a>
+    <a class="active" href="price.html" style="text-decoration: none;">Price</a>
+    <a href="order.php" style="text-decoration: none;">Order</a>
+    <a href="contact.html" style="text-decoration: none;">Contact Us</a>
+    <a href="#about" style="text-decoration: none;">About us</a>
+  </div>
+</div>
+
+
+<!-- BUTTONS FOR PRICES -->
+ <div  style="width:100%;padding: 10px;"class="btn-group btn-group-lg">
+  <button onclick="one()" type="button" class="btn btn-primary" autofocus>Laundry</button>
+  <button onclick="two()" type="button" class="btn btn-primary">Mens</button>
+  <button onclick="three()" type="button" class="btn btn-primary">Womens</button>
+  <button onclick="four()" type="button" class="btn btn-primary">Household</button>
+  <button onclick="five()" type="button" class="btn btn-primary">Woollen</button>
+</div> 
+
+
+<!-- FOR FIRST BUTTON - LAUNDRY -->
+<div id="one" style="padding: 20px;">
+	<table style="table-layout: fixed;width:100%;height:50px;border-spacing: 20px;border-collapse: separate;">
+	<tr align="center" style="height:50px;">
+     	<td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/washandfold.jpg" height=125 width=125><h2>Wash and Fold <br/><hr width="50%">Rs.80 (per Kg)</h2></td>
+     	<td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/ironed.jpg" height=125 width=125><h2>Wash and Iron<br/><hr width="50%">Rs.90 (per Kg)</h2></td>
+     	<td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/premium.png" height=125 width=125><h2>Premium Laundry<br/><hr width="60%"> Rs.130 (per Kg)</h2></td>
+	</tr>
+	<tr align="center" style="height:50px;">
+		<td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/fabric.jpg" height=125 width=125><h2>fabric Softener<br/><hr width="50%">Rs.5 (per Kg)</h2></td>
+		<td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/antiseptic.jpg" height=125 width=125> <h2>Antiseptic Wash <br/><hr width="60%">Rs.5 (per Kg)</h2></td>
+		<td></td>
+	</tr>
+</table>
+</div>
+
+
+<!-- FOR SECOND BUTTON - MENS -->
+<div id="two" style="display:none;padding: 20px;">
+	<table style="table-layout: fixed;width:100%;height:50px;border-spacing: 20px;border-collapse: separate;">
+  <tr align="center" style="height:50px;">
+      <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/shirt.jpg" height=125 width=125><h2>Shirt <br/><hr width="50%">Rs.40 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/tshirt.jpg" height=125 width=125><h2>T-Shirt<br/><hr width="50%">Rs.35 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/menjeans.jpg" height=125 width=125><h2>Jeans<br/><hr width="60%"> Rs.50 (per pc)</h2></td>
+  </tr>
+  <tr align="center" style="height:50px;">
+    <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/suit.jpg" height=125 width=125><h2>Suit<br/><hr width="50%">Rs.130 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/jacket.jpg" height=125 width=125> <h2>Jacket <br/><hr width="60%">Rs.80 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/leatherjacket.jpg" height=125 width=125><h2>Leather Jacket<br/><hr width="60%">Rs.100 (per pc)</h2></td>
+  </tr>
+</table>
+</div>
+
+
+<!-- FOR THIRD BUTTON - WOMENS -->
+<div id="three" style="display: none;padding: 20px;">
+  <table style="table-layout: fixed;width:100%;height:50px;border-spacing: 20px;border-collapse: separate;">
+  <tr align="center" style="height:50px;">
+      <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/top.jpg" height=125 width=125><h2>Top<br/><hr width="50%">Rs.40 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/skirt.jpg" height=125 width=125><h2>Skirt<br/><hr width="50%">Rs.35 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/womenjeans.jpg" height=125 width=125><h2>Jeans<br/><hr width="60%"> Rs.50 (per pc)</h2></td>
+  </tr>
+  <tr align="center" style="height:50px;">
+    <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/salwar.jpg" height=125 width=125><h2>Salwar<br/><hr width="50%">Rs.50 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/kurta.jpg" height=125 width=125> <h2>kurta <br/><hr width="60%">Rs.50 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/nighty.jpg" height=125 width=125> <h2>Nighty <br/><hr width="60%">Rs.50 (per pc)</h2></td>
+  </tr>
+  <tr align="center" style="height:50px;">
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/weddingdress.jpg" height=125 width=125> <h2>Wedding Dress <br/><hr width="60%">Rs.140 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/saree.jpg" height=125 width=125> <h2>Saree <br/><hr width="60%">Rs.80 (per pc)</h2></td>
+  </tr>
+</table>
+</div>
+
+
+<!-- FOR FOURTH BUTTON - HOUSEHOLD -->
+<div id="four" style="display: none;padding: 20px;">
+  <table style="table-layout: fixed;width:100%;height:50px;border-spacing: 20px;border-collapse: separate;">
+  <tr align="center" style="height:50px;">
+      <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/bathtowel.jpg" height=125 width=125><h2>Bath Towel<br/><hr width="50%">Rs.30 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/bedsheetsingle.jpg" height=125 width=125><h2>Bedsheet Single<br/><hr width="50%">Rs.40 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/bedsheetdouble.jpg" height=125 width=125><h2>Bedsheet Double<br/><hr width="60%"> Rs.60 (per pc)</h2></td>
+  </tr>
+  <tr align="center" style="height:50px;">
+    <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/teddysmall.jpg" height=125 width=125><h2>Teddy-small<br/><hr width="50%">Rs.80 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/teddybig.jpg" height=125 width=125> <h2>Teddy-big <br/><hr width="60%">Rs.250 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/curtains.jpg" height=125 width=125> <h2>Curtains <br/><hr width="60%">Rs.250 (per set)</h2></td>
+  </tr>
+  <tr align="center" style="height:50px;">
+    <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/cushion.jpg" height=125 width=125><h2>Cushion Covers<br/><hr width="50%">Rs.30 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/tablecloth.jpg" height=125 width=125> <h2>Table cloth <br/><hr width="60%">Rs.30 (per pc)</h2></td>
+  </tr>
+</table>
+</div>
+
+
+
+<!-- FOR FIFTH BUTTON - WOOLLEN -->
+<div id="five" style="display: none;padding: 20px;">
+  <table style="table-layout: fixed;width:100%;height:50px;border-spacing: 20px;border-collapse: separate;">
+  <tr align="center" style="height:50px;">
+      <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/inner.jpg" height=125 width=125><h2>Inner<br/><hr width="50%">Rs.30 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/halfsweater.jpg" height=125 width=125><h2>Half Sweater<br/><hr width="50%">Rs.40 (per pc)</h2></td>
+      <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/fullsweater.jpg" height=125 width=125><h2>Full Sweater<br/><hr width="60%"> Rs.60 (per pc)</h2></td>
+  </tr>
+  <tr align="center" style="height:50px;">
+    <td  style="box-shadow:2px 2px 2px 2px green;"> <img  style="padding: 20px;" align="left" src="images/sweatshirt.jpg" height=125 width=125><h2>Sweatshirt<br/><hr width="50%">Rs.80 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/blanketsingle.jpg" height=125 width=125> <h2>Blanket Single <br/><hr width="60%">Rs.120 (per pc)</h2></td>
+    <td  style="box-shadow:2px 2px 2px 2px green;"><img  style="padding: 20px;" align="left" src="images/blanketdouble.jpg" height=125 width=125> <h2>Blanket Double<br/><hr width="60%">Rs.250 (per set)</h2></td>
+  </tr>
+</table>
+</div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <br/><br/>
+    <table style="table-layout:fixed;color:white;width: 100%;"  align="center">
+      <tr>
+        <td align="right" style="padding-right: 40px;padding-bottom: 30px;">
+          <a href="home.html"> <img src="images/laun.jpg" class="rounded-circle" align="center" alt="Laundry" width=80 height=80> </a>
+        </td>
+        <td>
+          <a href="home.html" style="text-decoration: none;"><p style="font-size: 30px;padding-bottom: 30px;width: -moz-fit-content;">Online Laundry</p></a>
+        </td>
+      <td>
+        <h4 align="left">LINKS</h4>
+        <ul style="list-style-type: none;">
+          <li><a href="home.html" style="color: white;">Home</a></li>
+          <li><a href="price.html" style="color: white;">Price</a></li>
+          <li><a href="#" style="color: white;">About us</a></li>
+          <li><a href="#" style="color: white;">Contact us</a></li>
+        </ul>
+      </td>
+      <td>
+        <h4  align="left">SERVICES</h4>
+        <ul style="list-style-type: none;padding-bottom: 65px;">
+          <li>Laundry</li>
+          <li>Dry Cleaning</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </td>
+      <td style="padding-bottom: 50px;">
+        <a href="www.fb.com"><img src="images/facebook.png" height=40 width=40 hspace="10"></a>
+        <a href="www.gmail.com"><img src="images/google+.png" height=40 width=40 hspace="10"></a>
+        <a href="www.twitter.com"><img src="images/twitter.png" height=40 width=40 hspace="10"></a>
+        <a href="www.instagram.com"><img src="images/insta.png" height=40 width=40 hspace="10"></a>
+      </td>
+      </tr>
+    </table>
+  </footer>
+
+
+</body>
+</html>

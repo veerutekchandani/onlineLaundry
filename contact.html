@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Laundry</title>
+  <link rel="stylesheet" href="css/laundry.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!-- HEADER -->
+<div class="header">
+  <a href="home.html" class="logo fas"> <img src="images/laun.jpg" class="rounded" alt="Laundry" width=60 height=50> </a>
+  <a href="home.html" style="padding: 15px;text-decoration: none;"><p style="font-size: 25px;">Online Laundry</p></a>
+  <div class="header-right">
+    <a href="home.html" style="text-decoration: none;">Home</a>
+    <a href="price.html" style="text-decoration: none;">Price</a>
+    <a href="order.php" style="text-decoration: none;">Order</a>
+    <a class="active"  href="contact.html" style="text-decoration: none;">Contact Us</a>
+    <a href="#about" style="text-decoration: none;">About us</a>
+  </div>
+</div>
+
+
+
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="images/contact.png" alt="contact" width="100%" height=950>
+
+<!-- ----------------------------------------------------------- -->
+<!-- Mail Adress , Phone No. , Email -->
+<div  class="card-img-overlay" style="width: 100%;height: 300px;padding-top: 700px;color:white;" align="center">
+  	<div style="float: left;padding-top: 80px;padding-left: 80px;width: 48%;">
+    	<ul style="list-style: none;">
+    	<li><i class="fas fa-address-card fa-2x" style="color:red;text-shadow: 3px 3px 4px #272634;float: left;margin-right: 20px;"></i>
+    	<h3 style="font-weight: 600;">Mail Address:<br/><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maruti Estate, Bodla road, Agra<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;282010</h5></h3></li>
+    	</ul>
+  		</div>
+  		<div style="float: right;padding-top: 80px;width: 48%;padding-left: 80px;">
+  		<ul style="list-style: none;">
+    	<li><i style="color:red;text-shadow: 3px 3px 4px #272634;float: left;margin-right: 20px;" class="fas fa-phone fa-2x"></i><h3 style="font-weight: 600;display: inline;"> Call us: <h5 style="display: inline;">0123456789</h5></h3></li><br/>
+    	<li><i style="color:red;text-shadow: 4px 3px 4px #272634;float: left;margin-right: 20px;" class="fas fa-envelope fa-2x"></i><h3 style="font-weight: 600;display: inline;">Email us: <h5 style="display:inline;">demo@gmail.com</h5></h3></li>
+  		</ul>
+	</div>
+</div>
+
+
+<!--  ----------------------------------------------------------------------- -->
+<!-- Form for query -->
+<div class="row card-img-overlay">
+    <div class="col-xl-8 offset-xl-2 py-5">
+        <div class="card" align="center" style="font-family: fantasy;font-weight: 900;background-color: #51d0de;color:black;"> <h3>HAVE ANY QUESTION ??</h3><h1>OR</h1><h3>WANT TO SUGGEST SOMETHING ??</h3>
+        </div>
+        <div style="background-color: #f2f2f2;padding: 20px;border-radius: 5px;" class="card-body ">
+			<form id="contact-form" method="post" role="form">
+    		<div class="messages"></div>
+    		<div class="controls">
+    			<div class="row">
+            	<div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            	</div>
+        		</div>
+        		<div class="row">
+            	<div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            	</div>
+        		</div>
+        		<div class="row">
+            	<div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            	</div>
+            	<div class="col-md-12">
+                <input id="submit" name="submit" type="submit" class="btn btn-success btn-send" value="Send message">
+            	</div>
+        		</div>
+        		<div class="row">
+            	<div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required.
+                </p>
+            	</div>
+        		</div>
+    		</div>
+			</form><h3 id="success" class="ajax_response"></h3>
+		</div>
+	</div>
+</div>
+</div> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#contact-form').trigger("reset");
+$("#submit").click(function(e) {
+  e.preventDefault();
+var name = $("#name").val();
+var email = $("#email").val();
+var message = $("#message").val();
+if (name == '' || email == '' || message == '') {
+alert("Some Fields are Blank....!!");
+} else {
+// Returns successful data submission message when the entered information is stored in database.
+$.post("contact.php", {
+name: name,
+email: email,
+message: message,
+}, function(data) {
+ $('#success').fadeIn().html(data);
+        setTimeout(function() {
+          $('#success').fadeOut("slow");
+        }, 2000 );
+$('#contact-form').trigger("reset");  // To reset form fields
+});
+}
+});
+});
+</script>
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!-- ------------------------------------------------- -->
+<!-- FOOTER -->
+
+<footer class="footer">
+    <br/><br/>
+    <table style="table-layout:fixed;color:white;width: 100%;"  align="center">
+      <tr>
+        <td align="right" style="padding-right: 40px;padding-bottom: 30px;">
+          <a href="home.html"> <img src="images/laun.jpg" class="rounded-circle" align="center" alt="Laundry" width=80 height=80> </a>
+        </td>
+        <td>
+          <a href="home.html" style="text-decoration: none;"><p style="font-size: 30px;padding-bottom: 30px;width: -moz-fit-content;">Online Laundry</p></a>
+        </td>
+      <td>
+        <h4 align="left">LINKS</h4>
+        <ul style="list-style-type: none;">
+          <li><a href="home.html" style="color: white;">Home</a></li>
+          <li><a href="price.html" style="color: white;">Price</a></li>
+          <li><a href="#" style="color: white;">About us</a></li>
+          <li><a href="contact.html" style="color: white;">Contact us</a></li>
+        </ul>
+      </td>
+      <td>
+        <h4  align="left">SERVICES</h4>
+        <ul style="list-style-type: none;padding-bottom: 65px;">
+          <li>Laundry</li>
+          <li>Dry Cleaning</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </td>
+      <td style="padding-bottom: 50px;">
+        <a href="www.fb.com"><img src="images/facebook.png" height=40 width=40 hspace="10"></a>
+        <a href="www.gmail.com"><img src="images/google+.png" height=40 width=40 hspace="10"></a>
+        <a href="www.twitter.com"><img src="images/twitter.png" height=40 width=40 hspace="10"></a>
+        <a href="www.instagram.com"><img src="images/insta.png" height=40 width=40 hspace="10"></a>
+      </td>
+      </tr>
+    </table>
+  </footer>
+
+
+
+</body>
+</html>
